@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>График движения тела</title>
+    <!-- Подключаем библиотеку Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Форма для ввода значений -->
+    <form class="form" id="inputForm">
+        <label  for="initialVelocity">Начальная скорость (м/с):</label>
+        <input class="input" type="number" id="initialVelocity" value="20"><br>
+        <label class="input" for="angle">Угол броска (градусы):</label>
+        <input class="input" type="number" id="angle" value="45"><br>
+        <button class="button_sub" type="submit">Построить график</button>
+    </form>
+
+    <!-- Создаем элемент canvas для отображения графика -->
+    <canvas id="myChart" width="500" height="400"></canvas>
+
+<script src="core.js"></script>
+</body>
+</html>
